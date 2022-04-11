@@ -11,17 +11,20 @@ let btn_flex = {
 
 const CartButton = () => {
     //manage state of the count 
-  return <>
+  return (
+  <>
   {/* add to cart button */}
   {/* count with - and  + button */}
   <div style={btn_flex}>
       <button>-</button>
       <p className="count-item"></p>
+      {/* <p className="count-item">{count}</p> */}
       <button>+</button>
   </div>
   <>
   <button className={styles.btn_cart}>ADDTOCART</button>
   </>
-  </>;
+  </>
+  )
 };
 export default CartButton
